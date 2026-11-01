@@ -25,11 +25,11 @@ async function sendPush(title, body) {
     return;
   }
   try {
-    const r = await fetch("https://onesignal.com/api/v1/notifications", {
+    const r = await fetch("https://api.onesignal.com/notifications", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${ONESIGNAL_REST_KEY}`
+        "Authorization": `Key ${ONESIGNAL_REST_KEY}`
       },
       body: JSON.stringify({
         app_id: ONESIGNAL_APP_ID,
