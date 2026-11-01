@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const ONESIGNAL_APP_ID = "50e33082-20dd-4bbf-a4d0-62a9b9c151a0";
-const ONESIGNAL_REST_KEY = process.env.ONESIGNAL_REST_KEY || "os_v2_app_kdrtbara3vf37jgqmku3tqkrucvd2w5xldu5nvxu6yxmfwgglbpwziurdh6bhuyn2xfvoljeroxmiz47ja65jmjhkliljt5oozslsa";
+const ONESIGNAL_REST_KEY = process.env.ONESIGNAL_REST_KEY;
 
 let schedules = [];
 
